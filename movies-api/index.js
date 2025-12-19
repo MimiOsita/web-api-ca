@@ -1,6 +1,7 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import authenticate from './authenticate';
+import moviesRouter from './api/movies';
 import './db';
 // other imports
 import cors from 'cors';
@@ -35,7 +36,7 @@ app.use(express.json());
 app.use(errHandler);
 //Users router
 app.use('/api/users', usersRouter);
-
+app.use('/api/movies', moviesRouter);
 
 
 app.listen(port, () => {
