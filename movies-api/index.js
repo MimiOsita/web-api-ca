@@ -7,6 +7,7 @@ import './db';
 import cors from 'cors';
 //... other imports
 import usersRouter from './api/users';
+import favoritesRouter from "./api/favorites";
 
 
 
@@ -37,6 +38,7 @@ app.use(errHandler);
 //Users router
 app.use('/api/users', usersRouter);
 app.use('/api/movies', moviesRouter);
+app.use('/api/favorites', favoritesRouter);
 
 
 app.listen(port, () => {
