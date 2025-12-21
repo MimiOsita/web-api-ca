@@ -4,7 +4,7 @@ export const login = async (username, password) => {
             "Content-Type": "application/json",
         },
         method: "post",
-        bodt: JSON.stringify({ username: username, password: password }),
+        body: JSON.stringify({ username: username, password: password }),
     });
     return response.json();
 };
@@ -15,7 +15,7 @@ export const signup = async (username, password) => {
             "Content-Type": "application/json",
         },
         method: "post",
-        bodt: JSON.stringify({ username: username, password: password }),
+        body: JSON.stringify({ username: username, password: password }),
     });
     return response.json();
 }

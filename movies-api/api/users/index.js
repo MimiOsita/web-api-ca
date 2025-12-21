@@ -13,6 +13,7 @@ router.get('/', async (req, res) => {
     res.status(200).json(users);
 });
 
+
 /// register(Create)/Authenticate User
 //.... code as before
 
